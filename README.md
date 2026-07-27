@@ -1,8 +1,8 @@
 # SoundCode Public
 
-Static public site for the SoundCode landing page plus FAQ, Terms, Privacy, Creator
-guidelines, and Community guidelines. Intended for Vercel and linked from the SoundCode
-consumer app (`https://soundcode.com/...`).
+Public site for the SoundCode landing page plus FAQ, Terms, Privacy, Creator
+guidelines, and Community guidelines. Intended for Vercel and linked from the
+SoundCode consumer app (`https://soundcode.com/...`).
 
 ## Routes
 
@@ -24,31 +24,18 @@ npm run dev
 
 ## Deploy on Vercel
 
-This project is a **Next.js static export** (`output: 'export'`). `npm run build` writes HTML to `out/`.
+This is a standard **Next.js** app. Leave Framework Preset as **Next.js** and do
+**not** set a custom Output Directory (Vercel uses `.next` automatically).
 
-### Option A — Import repo (recommended)
-
-1. Push this repo to GitHub / GitLab / Bitbucket.
+1. Push this repo to GitHub.
 2. In [Vercel](https://vercel.com/new), **Import** the repository.
-3. Framework Preset: **Next.js** (detected automatically).
+3. Framework Preset: **Next.js** (default).
 4. Build Command: `npm run build` (default).
-5. Output Directory: `out` (set in `vercel.json`).
-6. Deploy. Map `soundcode.com` (or a subdomain) under Project → Settings → Domains.
+5. Output Directory: leave **empty** / default (do not use `out`).
+6. Deploy. Map your domain under Project → Settings → Domains.
 
-### Option B — CLI
+If a previous attempt set Output Directory to `out`, clear that in
+Project → Settings → General → Build & Development Settings, then redeploy.
 
-```bash
-npm i -g vercel
-vercel
-```
-
-Confirm production:
-
-```bash
-npm run build
-```
-
-You should see routes under `out/` including nested folders like `out/faq/index.html` (trailing slashes enabled).
-
-Legal copy is placeholder shared template content until counsel review — policy version
-reference in the footer: `2026-06-01`.
+Legal copy is placeholder shared template content until counsel review — policy
+version reference in the footer: `2026-06-01`.

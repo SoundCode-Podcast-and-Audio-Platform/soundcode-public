@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // Deploy as a normal Next.js app on Vercel (uses `.next`, not static `out/`).
   images: {
     unoptimized: true,
   },
-  // Clean static URLs on Vercel / static hosts
   trailingSlash: true,
 };
 
