@@ -9,9 +9,9 @@ SoundCode consumer app (`https://soundcode.com/...`).
 | Path | Page |
 |------|------|
 | `/` | Landing |
-| `/faq` | Frequently Asked Questions |
-| `/terms` | Terms and Conditions |
-| `/privacy` | Privacy Policy |
+| `/faq` | Interactive FAQ (search, categories, accordion) |
+| `/terms` | Terms and Conditions (July 2026) |
+| `/privacy` | Privacy Policy (July 2026) |
 | `/creator-guidelines` | Creator Guidelines |
 | `/community-guidelines` | Community Guidelines |
 
@@ -37,5 +37,5 @@ This is a standard **Next.js** app. Leave Framework Preset as **Next.js** and do
 If a previous attempt set Output Directory to `out`, clear that in
 Project → Settings → General → Build & Development Settings, then redeploy.
 
-Legal copy is placeholder shared template content until counsel review — policy
+Legal and FAQ copy is sourced from SoundCode policy documents (July 2026). Policy
 version reference in the footer: `2026-06-01`.

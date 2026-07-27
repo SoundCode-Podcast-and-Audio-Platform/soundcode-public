@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
-import { LegalDocument } from '../../components/LegalDocument';
+import { FaqPageClient } from '../../components/faq/FaqPageClient';
 
 export const metadata: Metadata = { title: 'FAQ' };
 
 export default function FaqPage() {
   return (
-    <main className="site-main is-legal">
-      <LegalDocument title="Frequently Asked Questions" />
+    <main className="site-main is-faq">
+      <FaqPageClient />
     </main>
   );
 }

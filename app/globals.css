@@ -215,6 +215,13 @@ img {
     calc(3.5rem + env(safe-area-inset-bottom));
 }
 
+.site-main.is-faq {
+  width: min(860px, calc(100% - 2 * var(--page-gutter)));
+  margin-inline: auto;
+  padding: calc(var(--header-offset) + env(safe-area-inset-top) + 1.75rem) var(--page-gutter)
+    calc(3.5rem + env(safe-area-inset-bottom));
+}
+
 .site-footer {
   background: var(--bg);
   padding: 1.5rem var(--page-gutter) calc(2.5rem + env(safe-area-inset-bottom));
@@ -802,6 +809,212 @@ img {
   margin-top: 4rem;
 }
 
+/* ——— FAQ ——— */
+
+.faq-page {
+  max-width: 100%;
+}
+
+.faq-header h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.85rem, 5vw, 2.6rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.65rem;
+}
+
+.faq-subtitle {
+  margin: 0 0 1.5rem;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.faq-search {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.35rem;
+}
+
+.faq-search-icon {
+  display: inline-flex;
+  color: var(--text-dim);
+  flex-shrink: 0;
+}
+
+.faq-search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.faq-search input::placeholder {
+  color: var(--text-dim);
+}
+
+.faq-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 2.5rem;
+}
+
+.faq-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 40px;
+  padding: 0.45rem 0.95rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.82);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.faq-pill:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--text);
+}
+
+.faq-pill.is-active {
+  background: var(--cyan);
+  border-color: var(--cyan);
+  color: var(--bg);
+}
+
+.faq-pill.is-active .faq-pill-icon {
+  color: var(--bg);
+}
+
+.faq-pill-icon {
+  display: inline-flex;
+  color: inherit;
+}
+
+.faq-empty {
+  color: var(--text-secondary);
+  margin: 2rem 0;
+}
+
+.faq-section {
+  margin-bottom: 2.25rem;
+}
+
+.faq-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 0 0 1rem;
+  color: var(--text);
+}
+
+.faq-section-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-accent-cyan .faq-section-icon,
+.faq-accent-cyan .faq-item[open] .faq-chevron {
+  color: var(--cyan);
+}
+
+.faq-accent-emerald .faq-section-icon,
+.faq-accent-emerald .faq-item[open] .faq-chevron {
+  color: var(--emerald);
+}
+
+.faq-accent-amber .faq-section-icon,
+.faq-accent-amber .faq-item[open] .faq-chevron {
+  color: var(--amber);
+}
+
+.faq-accent-purple .faq-section-icon,
+.faq-accent-purple .faq-item[open] .faq-chevron {
+  color: var(--purple);
+}
+
+.faq-accent-blue .faq-section-icon,
+.faq-accent-blue .faq-item[open] .faq-chevron {
+  color: #5b8cff;
+}
+
+.faq-accent-rose .faq-section-icon,
+.faq-accent-rose .faq-item[open] .faq-chevron {
+  color: #ff5b7a;
+}
+
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.faq-item {
+  border-radius: 14px;
+  background: rgba(17, 17, 26, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.faq-item summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.05rem 1.15rem;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  color: var(--text);
+  min-height: 52px;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-chevron {
+  display: inline-flex;
+  color: var(--text-dim);
+  flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.faq-item[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 0 1.15rem 1.15rem;
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
 /* ——— Legal pages ——— */
 
 .legal-page {
@@ -821,6 +1034,12 @@ img {
 .legal-page .lede,
 .legal-page > p:first-of-type {
   color: var(--text-secondary);
+}
+
+.legal-effective {
+  color: var(--text-dim) !important;
+  font-size: 0.95rem !important;
+  margin: -0.5rem 0 1.5rem !important;
 }
 
 .legal-page > p {
@@ -857,6 +1076,26 @@ img {
 
 .legal-page section p:last-child {
   margin-bottom: 0;
+}
+
+.legal-page ul {
+  margin: 0.35rem 0 1rem;
+  padding-left: 1.2rem;
+  color: rgba(228, 225, 234, 0.88);
+}
+
+.legal-page li {
+  margin: 0.3rem 0;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+.legal-footer-note {
+  margin-top: 2.5rem !important;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-dim) !important;
+  font-size: 0.9rem !important;
 }
 
 @media (max-width: 860px) {
@@ -923,6 +1162,23 @@ img {
     gap: 2rem;
   }
 
+  .faq-pills {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-bottom: 1.75rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .faq-pills::-webkit-scrollbar {
+    display: none;
+  }
+
+  .faq-pill {
+    flex-shrink: 0;
+  }
+
   .footer-socials {
     gap: 0.35rem;
   }
@@ -985,6 +1241,21 @@ img {
     padding-top: calc(var(--header-offset) + env(safe-area-inset-top) + 1.25rem);
   }
 
+  .site-main.is-faq {
+    width: min(100%, calc(100% - 2 * var(--page-gutter)));
+    padding-top: calc(var(--header-offset) + env(safe-area-inset-top) + 1.25rem);
+  }
+
+  .faq-item summary {
+    font-size: 0.98rem;
+    padding: 0.95rem 1rem;
+  }
+
+  .faq-item p {
+    padding: 0 1rem 1rem;
+    font-size: 0.95rem;
+  }
+
   .legal-page > p,
   .legal-page section p {
     font-size: 1.05rem;
@@ -1030,6 +1301,35 @@ img {
 
   .footer-contact {
     font-size: 0.95rem;
+  }
+}
+
+/* Desktop: ~1.2× layout width + type */
+@media (min-width: 1024px) {
+  :root {
+    --shell: min(1344px, calc(100% - 3rem));
+    --legal-shell: min(912px, calc(100% - 2.4rem));
+    --page-gutter: 1.5rem;
+  }
+
+  html {
+    font-size: 120%;
+  }
+
+  .header-pill {
+    width: min(1104px, 100%);
+  }
+
+  .site-main.is-faq {
+    width: min(1032px, calc(100% - 2 * var(--page-gutter)));
+  }
+
+  .footer-panel {
+    width: min(1440px, 100%);
+  }
+
+  .features-inner {
+    width: min(1229px, 100%);
   }
 }
 

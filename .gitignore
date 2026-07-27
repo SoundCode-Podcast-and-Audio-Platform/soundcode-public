@@ -23,3 +23,4 @@ tsconfig.tsbuildinfo
 
 # Source dumps (not runtime)
 drive-download-*/
+.docx-extract/
