@@ -1,0 +1,25 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Build
+.next
+out
+dist
+
+# Env
+.env
+.env*.local
+
+# Debug / OS
+npm-debug.log*
+.DS_Store
+*.pem
+
+# TypeScript
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# Source dumps (not runtime)
+drive-download-*/
