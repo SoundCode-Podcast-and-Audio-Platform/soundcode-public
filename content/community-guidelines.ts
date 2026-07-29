@@ -102,7 +102,7 @@ export const communityGuidelinesDoc: LegalDoc = {
           'Fraud',
           'Misleading content',
         ],
-        'Reports are reviewed by the SoundCode administration team. You can also contact support@soundcode.com.',
+        'Reports are reviewed by the SoundCode administration team. You can also contact support@soundcodeapp.com.',
       ],
     },
     {

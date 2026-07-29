@@ -106,7 +106,7 @@ export const privacyDoc: LegalDoc = {
           'Request a copy of stored information',
           'Withdraw consent where applicable',
         ],
-        'Requests may be submitted through SoundCode support channels, including support@soundcode.com.',
+        'Requests may be submitted through SoundCode support channels, including support@soundcodeapp.com.',
       ],
     },
     {
@@ -135,7 +135,7 @@ export const privacyDoc: LegalDoc = {
     {
       heading: 'Contact Us',
       blocks: [
-        'Questions regarding this Privacy Policy may be directed to the SoundCode support team through the official contact channels available on the platform, including support@soundcode.com.',
+        'Questions regarding this Privacy Policy may be directed to the SoundCode support team through the official contact channels available on the platform, including support@soundcodeapp.com.',
         'For related rules of conduct, see our Community Guidelines and Terms and Conditions.',
       ],
     },

@@ -86,7 +86,7 @@ export const termsDoc: LegalDoc = {
     {
       heading: '9. Contact',
       blocks: [
-        'Questions regarding these Terms may be directed to the SoundCode administration team through the official support channels published on the platform, including support@soundcode.com.',
+        'Questions regarding these Terms may be directed to the SoundCode administration team through the official support channels published on the platform, including support@soundcodeapp.com.',
       ],
     },
   ],

@@ -88,7 +88,7 @@ export function SiteFooter() {
               ))}
             </div>
             <div className="footer-contact">
-              <a href="mailto:support@soundcode.com">support@soundcode.com</a>
+              <a href="mailto:support@soundcodeapp.com">support@soundcodeapp.com</a>
               <p>Faith · Music · Community</p>
             </div>
           </div>

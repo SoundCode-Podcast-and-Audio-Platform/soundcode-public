@@ -179,7 +179,7 @@ export const faqSections: FaqSection[] = [
         id: 'contact',
         question: 'How do I contact SoundCode?',
         answer:
-          'Reach us at support@soundcode.com or through the official support channels on the platform.',
+          'Reach us at support@soundcodeapp.com or through the official support channels on the platform.',
       },
       {
         id: 'delete-account',
