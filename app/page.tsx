@@ -67,10 +67,10 @@ function PartyIcon() {
 function SliderIcon() {
   return (
     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-      <path d="M4 8H16M22 8H24" stroke="#11BA82" strokeWidth="2.1" strokeLinecap="round" />
-      <circle cx="19" cy="8" r="3" stroke="#11BA82" strokeWidth="2.1" fill="#06060B" />
-      <path d="M4 20H8M14 20H24" stroke="#11BA82" strokeWidth="2.1" strokeLinecap="round" />
-      <circle cx="11" cy="20" r="3" stroke="#11BA82" strokeWidth="2.1" fill="#06060B" />
+      <path d="M4 8H16M22 8H24" stroke="#7B39ED" strokeWidth="2.1" strokeLinecap="round" />
+      <circle cx="19" cy="8" r="3" stroke="#7B39ED" strokeWidth="2.1" fill="#06060B" />
+      <path d="M4 20H8M14 20H24" stroke="#7B39ED" strokeWidth="2.1" strokeLinecap="round" />
+      <circle cx="11" cy="20" r="3" stroke="#7B39ED" strokeWidth="2.1" fill="#06060B" />
     </svg>
   );
 }
@@ -136,7 +136,7 @@ const features = [
     title: 'Discovery Mode Slider',
     description:
       'Fine-tune your listening in real time — slide from Familiar worship favorites to Balanced, or venture into Adventurous new releases and international gospel.',
-    accent: 'emerald' as const,
+    accent: 'purple' as const,
     icon: <SliderIcon />,
   },
   {
@@ -253,9 +253,9 @@ export default function HomePage() {
       {/* Experience Highlights Showcase */}
       <section className="showcase-section" aria-labelledby="showcase-heading">
         <div className="showcase-inner">
-          <div className="showcase-card showcase-card-slider showcase-card-purple">
+          <div className="showcase-card showcase-card-slider">
             <div className="showcase-text">
-              <span className="badge-pill badge-pill-purple">Discovery Mode</span>
+              <span className="badge-pill badge-pill-emerald">Discovery Mode</span>
               <h3>Take Command of Your Faith Soundtrack</h3>
               <p>
                 Unlike rigid algorithms, Kingly puts you in the driver&apos;s seat. Adjust our signature
@@ -271,20 +271,20 @@ export default function HomePage() {
             <div className="showcase-visual">
               <div className="slider-mockup">
                 <div className="slider-label-row">
-                  <span className="slider-label">Familiar</span>
+                  <span className="slider-label active">Familiar</span>
                   <span className="slider-label active">Balanced</span>
                   <span className="slider-label">Adventurous</span>
                 </div>
                 <div className="slider-track">
-                  <div className="slider-fill" style={{ width: '55%' }} />
-                  <div className="slider-thumb" style={{ left: '55%' }} />
+                  <div className="slider-fill" style={{ width: '60%' }} />
+                  <div className="slider-thumb" style={{ left: '60%' }} />
                 </div>
                 <div className="slider-caption">Active: Balanced Discovery</div>
               </div>
             </div>
           </div>
 
-          <div className="showcase-card showcase-card-party showcase-card-purple">
+          <div className="showcase-card showcase-card-party">
             <div className="showcase-visual">
               <div className="party-mockup">
                 <div className="party-header">

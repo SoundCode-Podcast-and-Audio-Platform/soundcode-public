@@ -222,21 +222,6 @@ export function PricingPageClient({ initialAudience }: { initialAudience?: Audie
         </section>
       ) : null}
 
-      {/* Informative Link Cue */}
-      <div className="pricing-faq-callout">
-        <p>
-          Have questions about accounts, features, or playback? Visit our{' '}
-          <Link href="/faq" className="highlight-link">
-            Frequently Asked Questions
-          </Link>{' '}
-          or review the{' '}
-          <Link href="/creator-guidelines" className="highlight-link">
-            Creator Guidelines
-          </Link>
-          .
-        </p>
-      </div>
-
       {/* Bottom CTA Banner */}
       <section className="pricing-bottom-cta">
         <h2>Experience the Kingly difference today</h2>
