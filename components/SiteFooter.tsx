@@ -61,7 +61,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="footer-panel">
         <div className="footer-watermark" aria-hidden="true">
-          SoundCode
+          Kingly
         </div>
         <div className="footer-glow" aria-hidden="true" />
 
@@ -88,14 +88,14 @@ export function SiteFooter() {
               ))}
             </div>
             <div className="footer-contact">
-              <a href="mailto:support@soundcodeapp.com">support@soundcodeapp.com</a>
-              <p>Faith · Music · Community</p>
+              <a href="mailto:support@kinglyapp.com">support@kinglyapp.com</a>
+              <p>Faith · Music · Audio Experience</p>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>© {year} SoundCode. All rights reserved.</p>
+          <p>© {year} Kingly. All rights reserved.</p>
           <p>Policy version reference: 2026-06-01</p>
         </div>
       </div>

@@ -111,7 +111,7 @@ export function FaqPageClient() {
     <div className="faq-page">
       <header className="faq-header">
         <h1>Frequently Asked Questions</h1>
-        <p className="faq-subtitle">Find answers to common questions about SoundCode.</p>
+        <p className="faq-subtitle">Find answers to common questions about Kingly.</p>
         <label className="faq-search">
           <span className="faq-search-icon" aria-hidden="true">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">

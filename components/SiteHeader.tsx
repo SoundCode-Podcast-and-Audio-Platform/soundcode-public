@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 /** Primary nav links inside the floating pill */
 export const centerNavLinks = [
+  { href: '/pricing', label: 'Pricing' },
   { href: '/faq', label: 'FAQ' },
   { href: '/terms', label: 'Terms' },
   { href: '/privacy', label: 'Privacy' },
@@ -11,6 +12,7 @@ export const centerNavLinks = [
 /** Full site links for footer */
 export const navLinks = [
   { href: '/', label: 'Home' },
+  { href: '/pricing', label: 'Pricing' },
   { href: '/faq', label: 'FAQ' },
   { href: '/terms', label: 'Terms' },
   { href: '/privacy', label: 'Privacy' },
@@ -22,12 +24,12 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="header-pill">
-        <Link href="/" className="header-logo" aria-label="SoundCode home">
+        <Link href="/" className="header-logo" aria-label="Kingly home">
           <span className="header-logo-mark" aria-hidden="true">
             <img src="/logo-cyan.png" alt="" width={22} height={22} />
           </span>
           <span className="brand header-brand-text">
-            Sound<span>Code</span>
+            King<span>ly</span>
           </span>
         </Link>
 
@@ -39,8 +41,7 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        {/* App store destinations TBD */}
-        <Link href="/faq" className="header-cta">
+        <Link href="/pricing" className="header-cta">
           Get the app
         </Link>
       </div>

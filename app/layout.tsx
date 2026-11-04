@@ -20,11 +20,20 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: 'SoundCode',
-    template: '%s · SoundCode',
+    default: 'Kingly · Faith-Based Music, Podcasts & Listening Parties',
+    template: '%s · Kingly',
   },
   description:
-    'The faith-based audio platform built for the community. Discover music, sermons, and voices that move you.',
+    'The next-generation faith-based audio platform. Discover high-fidelity music, sermons, interactive listening parties, custom discovery sliders, and creator tools.',
+  keywords: [
+    'Kingly',
+    'Christian music',
+    'Gospel streaming',
+    'Faith podcasts',
+    'Sermons',
+    'Listening parties',
+    'Worship audio',
+  ],
 };
 
 export const viewport: Viewport = {

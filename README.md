@@ -1,41 +1,40 @@
-# SoundCode Public
+# Kingly Public
 
-Public site for the SoundCode landing page plus FAQ, Terms, Privacy, Creator
-guidelines, and Community guidelines. Intended for Vercel and linked from the
-SoundCode consumer app (`https://soundcode.com/...`).
+Public website for the Kingly platform — the next-generation faith-based audio platform for music, podcasts, interactive listening parties, and creators.
+
+Includes the landing page, interactive pricing plans (Listener & Creator tiers), interactive FAQ, Terms of Service, Privacy Policy, Creator Guidelines, and Community Guidelines.
 
 ## Routes
 
-| Path | Page |
-|------|------|
-| `/` | Landing |
-| `/faq` | Interactive FAQ (search, categories, accordion) |
-| `/terms` | Terms and Conditions (July 2026) |
-| `/privacy` | Privacy Policy (July 2026) |
-| `/creator-guidelines` | Creator Guidelines |
-| `/community-guidelines` | Community Guidelines |
+| Path | Page | Description |
+|------|------|-------------|
+| `/` | Landing | Modern hero, interactive features, app highlights |
+| `/pricing` | Pricing Plans | Interactive Listener & Creator tiers, billing intervals, feature comparisons |
+| `/faq` | Interactive FAQ | Searchable categories, accordion answers, updated platform details |
+| `/terms` | Terms and Conditions | Platform usage, accounts, intellectual property, acceptable use |
+| `/privacy` | Privacy Policy | Data protection, security, listening activity, rights |
+| `/creator-guidelines` | Creator Guidelines | Standards for music, podcasts, sermons, gifting, and creator tiers |
+| `/community-guidelines` | Community Guidelines | Community expectations, safe content, respect, Espees gifting |
 
-## Local
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **React**: React 19
+- **Styling**: Vanilla CSS tokens matching the Kingly mobile & web design system
+- **Fonts**: Hanken Grotesk & DM Sans via `next/font/google`
+
+## Local Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Deploy on Vercel
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-This is a standard **Next.js** app. Leave Framework Preset as **Next.js** and do
-**not** set a custom Output Directory (Vercel uses `.next` automatically).
+## Build
 
-1. Push this repo to GitHub.
-2. In [Vercel](https://vercel.com/new), **Import** the repository.
-3. Framework Preset: **Next.js** (default).
-4. Build Command: `npm run build` (default).
-5. Output Directory: leave **empty** / default (do not use `out`).
-6. Deploy. Map your domain under Project → Settings → Domains.
-
-If a previous attempt set Output Directory to `out`, clear that in
-Project → Settings → General → Build & Development Settings, then redeploy.
-
-Legal and FAQ copy is sourced from SoundCode policy documents (July 2026). Policy
-version reference in the footer: `2026-06-01`.
+```bash
+npm run build
+npm run start
+```
