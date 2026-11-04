@@ -253,9 +253,9 @@ export default function HomePage() {
       {/* Experience Highlights Showcase */}
       <section className="showcase-section" aria-labelledby="showcase-heading">
         <div className="showcase-inner">
-          <div className="showcase-card showcase-card-slider">
+          <div className="showcase-card showcase-card-slider showcase-card-purple">
             <div className="showcase-text">
-              <span className="badge-pill badge-pill-emerald">Discovery Mode</span>
+              <span className="badge-pill badge-pill-purple">Discovery Mode</span>
               <h3>Take Command of Your Faith Soundtrack</h3>
               <p>
                 Unlike rigid algorithms, Kingly puts you in the driver&apos;s seat. Adjust our signature
@@ -271,20 +271,20 @@ export default function HomePage() {
             <div className="showcase-visual">
               <div className="slider-mockup">
                 <div className="slider-label-row">
-                  <span className="slider-label active">Familiar</span>
+                  <span className="slider-label">Familiar</span>
                   <span className="slider-label active">Balanced</span>
                   <span className="slider-label">Adventurous</span>
                 </div>
                 <div className="slider-track">
-                  <div className="slider-fill" style={{ width: '60%' }} />
-                  <div className="slider-thumb" style={{ left: '60%' }} />
+                  <div className="slider-fill" style={{ width: '55%' }} />
+                  <div className="slider-thumb" style={{ left: '55%' }} />
                 </div>
                 <div className="slider-caption">Active: Balanced Discovery</div>
               </div>
             </div>
           </div>
 
-          <div className="showcase-card showcase-card-party">
+          <div className="showcase-card showcase-card-party showcase-card-purple">
             <div className="showcase-visual">
               <div className="party-mockup">
                 <div className="party-header">

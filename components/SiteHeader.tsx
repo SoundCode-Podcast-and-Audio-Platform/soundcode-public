@@ -42,7 +42,7 @@ export function SiteHeader() {
         </nav>
 
         <Link href="/pricing" className="header-cta">
-          Get the app
+          View Plans
         </Link>
       </div>
     </header>

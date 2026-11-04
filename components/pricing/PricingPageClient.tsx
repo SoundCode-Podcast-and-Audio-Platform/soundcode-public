@@ -121,7 +121,6 @@ export function PricingPageClient({ initialAudience }: { initialAudience?: Audie
                 <div className="tier-pricing">
                   <div className="tier-price-row">
                     <span className="tier-amount">{price}</span>
-                    {price !== '$0' ? <span className="tier-slash">/</span> : null}
                     <span className="tier-period">{period}</span>
                   </div>
                 </div>
@@ -163,7 +162,7 @@ export function PricingPageClient({ initialAudience }: { initialAudience?: Audie
               className="btn btn-ghost comparison-btn"
               onClick={() => setShowComparison((prev) => !prev)}
             >
-              {showComparison ? 'Hide Feature Comparison ↑' : 'Compare All Listener Features In Detail ↓'}
+              {showComparison ? 'Hide detailed feature comparison' : 'Compare all listener features in detail'}
             </button>
           </div>
 
@@ -221,66 +220,33 @@ export function PricingPageClient({ initialAudience }: { initialAudience?: Audie
             </div>
           ) : null}
         </section>
-      ) : (
-        <section className="creator-note-section">
-          <div className="creator-note-card">
-            <h3>Need custom storage or larger broadcast scale?</h3>
-            <p>
-              For established recording labels, international church campuses, or multi-campus networks with custom bandwidth and audio engineering requirements, contact our ministry team.
-            </p>
-            <a
-              href="mailto:support@kinglyapp.com?subject=Enterprise%20Broadcast%20Inquiry"
-              className="btn btn-emerald"
-            >
-              Contact Ministry Partnerships
-            </a>
-          </div>
-        </section>
-      )}
+      ) : null}
 
-      {/* Pricing FAQ Section */}
-      <section className="pricing-faq-section" aria-labelledby="pricing-faq-heading">
-        <h2 id="pricing-faq-heading" className="pricing-faq-title">
-          Frequently Asked Questions About Subscriptions
-        </h2>
-        <div className="pricing-faq-grid">
-          <div className="pricing-faq-item">
-            <h3>How does the 30-day free trial work?</h3>
-            <p>
-              When you start a trial for Kingly Plus, you receive full access to all premium features with zero ads, lossless audio, and offline downloads. You can cancel anytime before day 30 and you won&apos;t be billed.
-            </p>
-          </div>
-          <div className="pricing-faq-item">
-            <h3>Can I switch between plans later?</h3>
-            <p>
-              Yes! You can upgrade from Free to Plus, Duo, or Family anytime. If you upgrade, the new tier applies instantly with prorated credit toward your new subscription.
-            </p>
-          </div>
-          <div className="pricing-faq-item">
-            <h3>What payment methods are supported?</h3>
-            <p>
-              We accept international debit/credit cards, Apple Pay, and Google Pay through Stripe, as well as local bank transfers, USSD, and Mobile Money rails across Africa powered by Paystack.
-            </p>
-          </div>
-          <div className="pricing-faq-item">
-            <h3>How do Church & Ministry accounts work?</h3>
-            <p>
-              Churches can apply for Creator Starter or upgrade to Enterprise for multi-staff seats. This allows media directors, sound technicians, and pastors to manage series without sharing personal passwords.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Informative Link Cue */}
+      <div className="pricing-faq-callout">
+        <p>
+          Have questions about accounts, features, or playback? Visit our{' '}
+          <Link href="/faq" className="highlight-link">
+            Frequently Asked Questions
+          </Link>{' '}
+          or review the{' '}
+          <Link href="/creator-guidelines" className="highlight-link">
+            Creator Guidelines
+          </Link>
+          .
+        </p>
+      </div>
 
       {/* Bottom CTA Banner */}
       <section className="pricing-bottom-cta">
         <h2>Experience the Kingly difference today</h2>
-        <p>No credit card required to start listening to thousands of faith-based tracks and sermons.</p>
+        <p>Explore thousands of faith-based songs, sermons, and interactive listening parties.</p>
         <div className="cta-actions">
           <Link href="/faq" className="btn btn-primary">
-            Download Kingly App
+            Frequently Asked Questions
           </Link>
           <Link href="/creator-guidelines" className="btn btn-ghost">
-            Learn About Creator Tools
+            Creator Guidelines
           </Link>
         </div>
       </section>
