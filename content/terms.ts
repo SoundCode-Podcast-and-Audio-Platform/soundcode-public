@@ -86,7 +86,7 @@ export const termsDoc: LegalDoc = {
     {
       heading: '9. Contact',
       blocks: [
-        'Questions regarding these Terms may be directed to the Kingly administration and support team at support@kinglyapp.com.',
+        'Questions regarding these Terms may be directed to the Kingly administration and support team at support@thekinglyapp.com.',
       ],
     },
   ],

@@ -106,7 +106,7 @@ export const privacyDoc: LegalDoc = {
           'Export a machine-readable copy of your profile and library data',
           'Withdraw previously granted consent at any time',
         ],
-        'Requests may be submitted to the Kingly support team at support@kinglyapp.com.',
+        'Requests may be submitted to the Kingly support team at support@thekinglyapp.com.',
       ],
     },
     {
@@ -134,7 +134,7 @@ export const privacyDoc: LegalDoc = {
     {
       heading: 'Contact Us',
       blocks: [
-        'Questions, privacy concerns, or data requests should be directed to the Kingly team at support@kinglyapp.com.',
+        'Questions, privacy concerns, or data requests should be directed to the Kingly team at support@thekinglyapp.com.',
         'For guidelines on content and user interactions, please consult our Community Guidelines and Terms and Conditions.',
       ],
     },

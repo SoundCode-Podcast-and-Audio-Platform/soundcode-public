@@ -34,7 +34,7 @@ export const communityGuidelinesDoc: LegalDoc = {
           'Users must only send financial tokens and gifts using official in-app Kingly mechanisms',
         ],
         'Any user or creator attempting fraudulent solicitations will have their accounts immediately investigated and subject to termination.',
-        'Users should report any suspicious payment requests to support@kinglyapp.com.',
+        'Users should report any suspicious payment requests to support@thekinglyapp.com.',
       ],
     },
     {
@@ -76,7 +76,7 @@ export const communityGuidelinesDoc: LegalDoc = {
         'If you encounter content or user behavior that violates these guidelines:',
         [
           'Use the in-app reporting tools on any track, artist profile, or listening party',
-          'Contact the Kingly administration and safety team directly at support@kinglyapp.com',
+          'Contact the Kingly administration and safety team directly at support@thekinglyapp.com',
         ],
         'All reports are treated with confidentiality and reviewed promptly by our human moderation team.',
       ],
@@ -85,7 +85,7 @@ export const communityGuidelinesDoc: LegalDoc = {
       heading: 'Enforcement and Appeals',
       blocks: [
         'Violations of these guidelines may result in warnings, content removal, temporary suspension, or permanent account forfeiture.',
-        'Account holders may appeal moderation decisions by contacting support@kinglyapp.com with supporting documentation.',
+        'Account holders may appeal moderation decisions by contacting support@thekinglyapp.com with supporting documentation.',
       ],
     },
   ],

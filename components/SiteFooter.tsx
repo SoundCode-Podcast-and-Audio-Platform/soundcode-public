@@ -88,7 +88,7 @@ export function SiteFooter() {
               ))}
             </div>
             <div className="footer-contact">
-              <a href="mailto:support@kinglyapp.com">support@kinglyapp.com</a>
+              <a href="mailto:support@thekinglyapp.com">support@thekinglyapp.com</a>
               <p>Faith · Music · Audio Experience</p>
             </div>
           </div>
